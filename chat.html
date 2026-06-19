@@ -259,7 +259,7 @@
   <div class="messages" id="messages">
     <div class="message bot">
       <div class="bubble" id="welcomeMsg">
-        Peace be upon you. I'm your Quranic companion. Tell me what's on your mind \u2014 whether it's a struggle, a question, or something you're going through. I'll share verses and wisdom from the Quran to help guide you.
+        Peace be upon you. I'm your Quranic companion. Tell me what's on your mind &mdash; whether it's a struggle, a question, or something you're going through. I'll share verses and wisdom from the Quran to help guide you.
       </div>
     </div>
   </div>
@@ -681,6 +681,7 @@ function applyLang(lang) {
 }
 
 langBtns.forEach(btn => btn.addEventListener('click', () => applyLang(btn.dataset.lang)));
+applyLang(currentLang);
 sendBtn.addEventListener('click', handleSend);
 input.addEventListener('keydown', e => { if (e.key === 'Enter') handleSend(); });
 document.addEventListener('click', e => {
